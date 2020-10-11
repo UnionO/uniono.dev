@@ -9,7 +9,7 @@ export default () => (
 		<Header 
 			title="Watches" 
 			description="Tick tock, tick tock, tick tock"
-			link="https://github.com/UnionO/uniono/blob/master/packages/landing/src/pages/examples/watches/useWatches.js"
+			link="https://github.com/UnionO/uniono.dev/blob/master/src/pages/examples/watches/useWatches.js"
 		/>
 		<Watches />
 	</Grid>

@@ -9,7 +9,7 @@ export default () => (
 		<Header 
 			title="Todo" 
 			description="Сan a framework be considered complete without a Todo List implemented?"
-			link="https://github.com/UnionO/uniono/blob/master/packages/landing/src/pages/examples/to-do/useToDo.js"
+			link="https://github.com/UnionO/uniono.dev/blob/master/src/pages/examples/to-do/useToDo.js"
 		/>
 		<ToDo />
 	</Grid>

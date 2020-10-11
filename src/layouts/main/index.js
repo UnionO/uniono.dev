@@ -32,7 +32,7 @@ export default ({ children }) => {
           </IconButton>
           <IconButton 
             color="inherit" 
-            href="https://github.com/UnionO/uniono"
+            href="https://github.com/UnionO"
             target="_blank"
             rel="noopener noreferrer"
           >

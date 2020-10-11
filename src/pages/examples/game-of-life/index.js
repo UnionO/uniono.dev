@@ -14,7 +14,7 @@ export default () => (
 				<Grid container justify="flex-end">© Alan Cox</Grid>
 				</>
 			)}
-			link="https://github.com/UnionO/uniono/blob/master/packages/landing/src/pages/examples/game-of-life/useLife.js"
+			link="https://github.com/UnionO/uniono.dev/blob/master/src/pages/examples/game-of-life/useLife.js"
 		/>
 		<GameOfLife />
 	</Grid>
