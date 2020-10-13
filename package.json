@@ -26,6 +26,7 @@
     "docker": "npm run docker-build && npm run docker-push",
     "docker-build": "docker build -t uniono/uniono.dev:latest -t uniono/uniono.dev:${npm_package_version} .",
     "docker-push": "docker push uniono/uniono.dev:latest && docker push uniono/uniono.dev:${npm_package_version}",
+    "docker-update-lts": "docker build -t uniono/uniono.dev:lts . && docker push uniono/uniono.dev:lts",
     "docker-up": "docker-compose up -d",
     "docker-down": "docker-compose down"
   },
