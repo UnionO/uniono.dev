@@ -22,7 +22,12 @@
     "start": "craco start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docker": "npm run docker-build && npm run docker-push",
+    "docker-build": "docker build -t uniono/uniono.dev:latest -t uniono/uniono.dev:${npm_package_version} .",
+    "docker-push": "docker push uniono/uniono.dev:latest && docker push uniono/uniono.dev:${npm_package_version}",
+    "docker-up": "docker-compose up -d",
+    "docker-down": "docker-compose down"
   },
   "eslintConfig": {
     "extends": "react-app"
