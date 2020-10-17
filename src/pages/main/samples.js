@@ -12,11 +12,7 @@ export const sampleSimple = `{
 
 		const entities = await api.entities.load(q)
 		...
-	},
-	onQChanged: useUnion.effect(
-		debounce(({ mutations }) => mutations.loadEntities(), 300),
-		({ q }) => ({ q })
-	)
+	}
 	...
 }`
 

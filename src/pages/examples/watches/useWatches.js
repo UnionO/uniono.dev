@@ -8,7 +8,7 @@ export const normalize = (value, delta, maxValue) => ({
   angle: ((value + delta) / maxValue) * 360
 })
 
-export const watches = {
+export const watches = () => ({
 	view: 'simple',
 	now: new Date(),
 	interval: null,
@@ -31,7 +31,7 @@ export const watches = {
 		clearInterval(value().interval)
 		mutations.interval.setValue(null)
 	}
-}
+})
 
 export default () => { 
 	const model = useUnion(watches)

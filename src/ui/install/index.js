@@ -13,6 +13,7 @@ export default ({ children }) => {
 
 const useStyles = makeStyles((theme) => ({
 	root: {
+		color: '#FFF',
 		backgroundColor: '#292d3e',
 		borderRadius: 3,
 		padding: theme.spacing(2)

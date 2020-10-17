@@ -1,6 +1,6 @@
 {
   "name": "landing",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "@craco/craco": "^5.7.0",
@@ -10,9 +10,10 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "@uniono/core": "^0.1.0",
-    "@uniono/react": "^0.1.0",
-    "@uniono/state": "^0.1.0",
+    "@uniono/core": "^0.1.1",
+    "@uniono/react": "^0.1.1",
+    "@uniono/state": "^0.1.1",
+    "markdown-to-jsx": "^7.0.1",
     "react": "^16.13.1",
     "react-ace": "^9.1.4",
     "react-dom": "^16.13.1",
@@ -20,9 +21,9 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
     "docker": "npm run docker-build && npm run docker-push",
     "docker-build": "docker build -t uniono/uniono.dev:latest -t uniono/uniono.dev:${npm_package_version} .",
     "docker-push": "docker push uniono/uniono.dev:latest && docker push uniono/uniono.dev:${npm_package_version}",
@@ -44,5 +45,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "install": "^0.13.0",
+    "npm": "^7.0.2",
+    "raw-loader": "^4.0.2"
   }
 }
